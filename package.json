@@ -5,7 +5,8 @@
   "main": "src/index.js",
   "scripts": {
     "test": "mocha src/index.test.js -w",
-	"commit": "git-cz",
+	"test:single": "mocha src/index.test.js",
+	"commit": "git-cz"
   },
   "repository": {
     "type": "git",
@@ -28,7 +29,7 @@
     "cz-conventional-changelog": "1.1.6",
     "mocha": "2.5.3"
   },
-  "czConfig": {
-	"path": "node_modules/cz-conventional-changelog",
+  "commitizen": {
+	"path": "node_modules/cz-conventional-changelog"
   }
 }

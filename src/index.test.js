@@ -13,14 +13,14 @@ describe('Mimic.setValue', function() {
 	 test.name= 'Darryl';
    }), 
   it('should change the value of state', function() {
-	expect(test.name).to.be.string('Darryl');
+	expect(test.name).to.equal('Darryl');
 	mimic.setValue(test, 'name', 'Cat');
-	expect(test.name).to.be.string('Cat')
+	expect(test.name).to.equal('Cat')
   }),
   it('state should stay the same', function() {
-	expect(test.name).to.be.string('Darryl');
+	expect(test.name).to.equal('Darryl');
 	mimic.setValue(test, 'name', 'Darryl');
-	expect(test.name).to.be.string('Darryl');
+	expect(test.name).to.equal('Darryl');
   })
 });
 
@@ -31,7 +31,7 @@ describe('Mimic.getValue', function() {
   };
   it('should return name: Rand', function() {
 	var value = mimic.getValue(test, 'name');
-	expect(value).to.be.string('Rand');
+	expect(value).to.equal('Rand');
   }),
   it('should return undefined if unknow key', function() {
 	var value = mimic.getValue(test, 'email');
