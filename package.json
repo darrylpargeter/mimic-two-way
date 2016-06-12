@@ -1,0 +1,34 @@
+{
+  "name": "mimic-two-way",
+  "version": "1.0.0",
+  "description": "Simple Two way data binding for React and Flux",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "mocha src/index.test.js -w",
+	"commit": "git-cz",
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/darrylpargeter/mimic-two-way.git"
+  },
+  "keywords": [
+    "React",
+    "Fulx",
+    "Two-Way-databinding"
+  ],
+  "author": "Darryl Pargeter <darrylpargeter@gmail.com> (http://www.darrylpargeter.co.uk/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/darrylpargeter/mimic-two-way/issues"
+  },
+  "homepage": "https://github.com/darrylpargeter/mimic-two-way#readme",
+  "devDependencies": {
+    "chai": "3.5.0",
+    "commitizen": "2.8.2",
+    "cz-conventional-changelog": "1.1.6",
+    "mocha": "2.5.3"
+  },
+  "czConfig": {
+	"path": "node_modules/cz-conventional-changelog",
+  }
+}
